@@ -110,3 +110,67 @@ The improved prompt generated a more professional response because it clearly sp
 - Professional tone
 
 These details helped produce a complete and workplace-appropriate email.
+
+
+## Scenario C: Creative Content Generation
+
+### Objective
+
+Generate creative marketing content for a new product launch.
+
+### Initial Prompt
+
+```text
+Write a social media post about a new smartwatch.
+```
+
+### Initial Output
+
+Check out our new smartwatch. It has many useful features and a modern design. Buy now and stay connected.
+
+### Improved Prompt
+
+```text
+Act as a social media marketing specialist.
+
+Create an Instagram post promoting a newly launched smartwatch targeted at young professionals. Highlight fitness tracking, battery life, and productivity features. Use an energetic tone, include a catchy hook, and end with a call-to-action. Keep the post under 100 words.
+```
+
+### Improved Output
+
+⌚ Meet the Smartwatch That Works as Hard as You Do!
+
+Track your fitness goals, stay productive throughout the day, and enjoy long-lasting battery life without constantly searching for a charger.
+
+Whether you're managing meetings, workouts, or daily tasks, this smartwatch keeps everything within reach.
+
+Upgrade your routine and stay ahead of your schedule.
+
+Get yours today and experience smarter living!
+
+### Iteration Analysis
+
+The improved prompt produced stronger marketing content because it clearly defined:
+
+- The target audience (young professionals)
+- The role of the writer (marketing specialist)
+- Key product features to highlight
+- Desired tone (energetic)
+- Required structure (hook and call-to-action)
+- Length limitation
+
+These instructions resulted in a more engaging and audience-focused promotional message.
+
+## Role and Context Analysis
+
+The quality of AI-generated responses improved significantly when role, audience, context, tone, and output requirements were clearly specified.
+
+Across all three scenarios, the improved prompts generated responses that were:
+
+- More relevant to the objective
+- Better structured
+- More detailed
+- More audience-specific
+- More professional and useful
+
+This demonstrates the importance of prompt engineering in guiding large language models toward producing higher-quality outputs.
