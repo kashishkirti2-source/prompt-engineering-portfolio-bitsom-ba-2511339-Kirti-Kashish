@@ -238,3 +238,177 @@ Medium temperature provides a balance between creativity and reliability, making
 High temperature generates more diverse and creative outputs but may reduce consistency. It is useful for brainstorming, storytelling, and creative writing tasks.
 
 This experiment demonstrates how temperature influences the behavior of large language models and helps users choose appropriate settings based on their goals.
+
+
+# Part 3: Strategic Prompting Techniques
+
+## 3.1 Chain-of-Thought Prompting
+
+### Objective
+
+Use Chain-of-Thought prompting to guide the model through a multi-step reasoning problem.
+
+### Problem
+
+A company wants to hire one candidate for a data analyst position.
+
+Candidate A:
+- Experience: 5 years
+- Technical Test Score: 78/100
+- Communication Score: 90/100
+
+Candidate B:
+- Experience: 3 years
+- Technical Test Score: 92/100
+- Communication Score: 80/100
+
+Determine which candidate should be selected and explain the reasoning step by step.
+
+### Chain-of-Thought Prompt
+
+```text
+You are a hiring manager.
+
+Analyze both candidates step by step.
+
+Consider:
+1. Years of experience
+2. Technical skills
+3. Communication skills
+4. Overall suitability for a data analyst role
+
+Provide your reasoning before giving the final recommendation.
+```
+
+### Model Response
+
+Step 1: Compare Experience
+
+Candidate A has 5 years of experience, while Candidate B has 3 years. Candidate A has more industry exposure and practical experience.
+
+Step 2: Compare Technical Skills
+
+Candidate B scored 92/100 on the technical test compared to Candidate A's 78/100. Candidate B demonstrates stronger technical ability.
+
+Step 3: Compare Communication Skills
+
+Candidate A scored 90/100 in communication compared to Candidate B's 80/100. Candidate A appears to have stronger communication skills.
+
+Step 4: Evaluate Overall Suitability
+
+A data analyst role requires strong technical skills while also benefiting from good communication and business understanding. Candidate B has a significant advantage in technical performance, while Candidate A has advantages in experience and communication.
+
+Final Recommendation
+
+Candidate B should be selected because the technical test score is substantially higher, and technical capability is a critical requirement for a data analyst position. Candidate A remains a strong candidate due to experience and communication skills.
+
+### Analysis
+
+Chain-of-Thought prompting encouraged the model to break the problem into smaller reasoning steps before producing a conclusion.
+
+Benefits observed:
+
+- More transparent reasoning
+- Easier decision validation
+- Better explanation quality
+- Reduced risk of missing important factors
+
+This technique is especially useful for business analysis, decision-making, and problem-solving tasks.
+
+
+## 3.2 Few-Shot Prompting
+
+### Objective
+
+Demonstrate how providing examples improves the quality and consistency of model outputs.
+
+### Task
+
+Classify customer reviews as Positive, Neutral, or Negative.
+
+---
+
+### Zero-Shot Prompt
+
+```text
+Classify the sentiment of each review as Positive, Neutral, or Negative.
+
+Review 1: "The product arrived damaged and customer service was unhelpful."
+Review 2: "Works as expected, nothing special but does the job."
+Review 3: "Absolutely love this! Best purchase I've made all year!"
+Review 4: "The quality is okay but slightly overpriced for what you get."
+Review 5: "Terrible experience, would not recommend to anyone."
+```
+
+### Zero-Shot Results
+
+| Review | Classification |
+|----------|----------|
+| Review 1 | Negative |
+| Review 2 | Neutral |
+| Review 3 | Positive |
+| Review 4 | Neutral |
+| Review 5 | Negative |
+
+---
+
+### Few-Shot Prompt
+
+```text
+Classify each review as Positive, Neutral, or Negative.
+
+Examples:
+
+Review: "This product exceeded my expectations."
+Sentiment: Positive
+
+Review: "The item broke after one week."
+Sentiment: Negative
+
+Review: "It works as described."
+Sentiment: Neutral
+
+Now classify the following:
+
+Review 1: "The product arrived damaged and customer service was unhelpful."
+
+Review 2: "Works as expected, nothing special but does the job."
+
+Review 3: "Absolutely love this! Best purchase I've made all year!"
+
+Review 4: "The quality is okay but slightly overpriced for what you get."
+
+Review 5: "Terrible experience, would not recommend to anyone."
+```
+
+### Few-Shot Results
+
+| Review | Classification |
+|----------|----------|
+| Review 1 | Negative |
+| Review 2 | Neutral |
+| Review 3 | Positive |
+| Review 4 | Neutral |
+| Review 5 | Negative |
+
+---
+
+### Comparison Table
+
+| Review # | Zero-Shot Result | Few-Shot Result | Correct Label | Improved? |
+|----------|----------|----------|----------|----------|
+| 1 | Negative | Negative | Negative | No |
+| 2 | Neutral | Neutral | Neutral | No |
+| 3 | Positive | Positive | Positive | No |
+| 4 | Neutral | Neutral | Neutral | No |
+| 5 | Negative | Negative | Negative | No |
+
+---
+
+### Analysis
+
+Few-shot prompting provides examples that guide the model toward the expected format and classification behavior.
+
+In this example, both approaches produced correct results. However, few-shot prompting is especially useful when tasks are ambiguous, domain-specific, or require a consistent output format.
+
+Providing examples helps reduce misunderstandings and improves reliability across larger datasets.
