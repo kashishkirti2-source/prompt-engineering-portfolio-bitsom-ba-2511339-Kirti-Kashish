@@ -174,3 +174,67 @@ Across all three scenarios, the improved prompts generated responses that were:
 - More professional and useful
 
 This demonstrates the importance of prompt engineering in guiding large language models toward producing higher-quality outputs.
+
+
+# Part 2: Temperature Experimentation
+
+## Objective
+
+To observe how different temperature settings affect the creativity, predictability, and diversity of AI-generated responses.
+
+### Prompt Used
+
+```text
+Suggest a tagline for a new eco-friendly water bottle brand.
+```
+
+### Low Temperature Response (0.2)
+
+"Pure Water. Sustainable Future."
+
+Characteristics:
+
+- Direct and predictable
+- Professional tone
+- Low creativity
+- Highly focused on the main idea
+
+### Medium Temperature Response (0.7)
+
+"Drink Smart. Live Green."
+
+Characteristics:
+
+- Balanced creativity
+- Clear and memorable
+- Suitable for marketing use
+- Moderate variation in wording
+
+### High Temperature Response (1.0)
+
+"Every Sip Saves Tomorrow."
+
+Characteristics:
+
+- More creative and expressive
+- Emotionally engaging
+- Less predictable
+- Greater linguistic variation
+
+## Temperature Comparison
+
+| Temperature | Creativity | Consistency | Predictability |
+|------------|------------|------------|------------|
+| Low (0.2) | Low | High | High |
+| Medium (0.7) | Medium | Medium | Medium |
+| High (1.0) | High | Lower | Low |
+
+## Analysis
+
+Low temperature produces safer and more predictable responses, making it useful for factual or professional tasks.
+
+Medium temperature provides a balance between creativity and reliability, making it suitable for most business and content-generation tasks.
+
+High temperature generates more diverse and creative outputs but may reduce consistency. It is useful for brainstorming, storytelling, and creative writing tasks.
+
+This experiment demonstrates how temperature influences the behavior of large language models and helps users choose appropriate settings based on their goals.
