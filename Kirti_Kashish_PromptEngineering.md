@@ -7,7 +7,7 @@ LLM Used: ChatGPT (GPT-5.5)
 
 # Part 1: Prompt Design and Iteration
 
-## Scenario A: Technical Explanation
+### 1.1 Scenario A: Technical Explanation
 
 ### Objective
 
@@ -56,7 +56,7 @@ The improved prompt produced a better response because it specified:
 These instructions resulted in a clearer and more beginner-friendly explanation.
 
 
-## Scenario B: Professional Email Writing
+### 1.1 Scenario B: Professional Email Writing
 
 ### Objective
 
@@ -119,7 +119,7 @@ The improved prompt generated a more professional response because it clearly sp
 These details helped produce a complete and workplace-appropriate email.
 
 
-## Scenario C: Creative Content Generation
+### 1.1 Scenario C: Creative Content Generation
 
 ### Objective
 
@@ -168,20 +168,6 @@ The improved prompt produced stronger marketing content because it clearly defin
 
 These instructions resulted in a more engaging and audience-focused promotional message.
 
-## Role and Context Analysis
-
-The quality of AI-generated responses improved significantly when role, audience, context, tone, and output requirements were clearly specified.
-
-Across all three scenarios, the improved prompts generated responses that were:
-
-- More relevant to the objective
-- Better structured
-- More detailed
-- More audience-specific
-- More professional and useful
-
-This demonstrates the importance of prompt engineering in guiding large language models toward producing higher-quality outputs.
-
 
 ## 1.2 Iteration Documentation
 
@@ -209,7 +195,22 @@ This demonstrates the importance of prompt engineering in guiding large language
 | V2 | Write a marketing post promoting a smartwatch. | Added marketing context. | Increased promotional quality. |
 | V3 | Act as a social media marketing specialist. Create an Instagram post promoting a newly launched smartwatch targeted at young professionals. Highlight fitness tracking, battery life, and productivity features. Use an energetic tone, include a catchy hook, and end with a call-to-action. | Added role, audience, tone, and feature requirements. | Produced a more engaging and targeted marketing message. |
 
-# Part 2: Temperature Experimentation
+
+### 1.3 Role and Context Analysis
+
+The quality of AI-generated responses improved significantly when role, audience, context, tone, and output requirements were clearly specified.
+
+Across all three scenarios, the improved prompts generated responses that were:
+
+- More relevant to the objective
+- Better structured
+- More detailed
+- More audience-specific
+- More professional and useful
+
+This demonstrates the importance of prompt engineering in guiding large language models toward producing higher-quality outputs.
+
+## Part 2: Temperature & Parameter Control
 
 ## Objective
 
@@ -315,9 +316,6 @@ Which candidate should be selected for the data analyst position?
 Candidate B should be selected because they achieved a higher technical test score and appear better suited for the technical requirements of the role.
 
 ### With Chain-of-Thought Prompt
-
-(Existing Chain-of-Thought section continues below)
-```
 
 ## 3.1 Chain-of-Thought Prompting
 
