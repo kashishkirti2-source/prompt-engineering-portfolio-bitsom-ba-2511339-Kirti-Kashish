@@ -1,20 +1,30 @@
-Part 1: Prompt Design and Iteration
-Scenario A: Technical Explanation
-Objective
+# Part 1: Prompt Design and Iteration
+
+## Scenario A: Technical Explanation
+
+### Objective
 
 Explain a technical concept to a beginner audience.
 
-Initial Prompt
+### Initial Prompt
+
+```text
 Explain how neural networks work.
-Initial Output
+```
+
+### Initial Output
 
 Neural networks are machine learning models inspired by the human brain. They consist of layers of interconnected nodes called neurons. These neurons process input data, perform calculations, and pass information through the network. During training, the model adjusts its weights to reduce errors and improve predictions.
 
-Improved Prompt
+### Improved Prompt
+
+```text
 Act as a teacher explaining to a 15-year-old student with no technical background.
 
 Explain how neural networks work using simple language, a real-world analogy, and a step-by-step explanation. Avoid mathematical formulas and keep the explanation under 200 words.
-Improved Output
+```
+
+### Improved Output
 
 A neural network is a computer system that learns from examples, similar to how a student learns through practice.
 
@@ -26,14 +36,14 @@ If the prediction is wrong, the network adjusts itself and learns from the mista
 
 This learning process allows neural networks to solve tasks such as image recognition, language translation, and recommendation systems.
 
-Iteration Analysis
+### Iteration Analysis
 
 The improved prompt produced a better response because it specified:
 
-Target audience (15-year-old beginner)
-Desired explanation style (teacher)
-Use of analogy
-Simpler language
-Length constraint
+- Target audience (15-year-old beginner)
+- Desired explanation style (teacher)
+- Use of analogy
+- Simpler language
+- Length constraint
 
 These instructions resulted in a clearer and more beginner-friendly explanation.
