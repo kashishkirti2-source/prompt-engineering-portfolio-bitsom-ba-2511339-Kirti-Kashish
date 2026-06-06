@@ -47,3 +47,66 @@ The improved prompt produced a better response because it specified:
 - Length constraint
 
 These instructions resulted in a clearer and more beginner-friendly explanation.
+
+
+## Scenario B: Professional Email Writing
+
+### Objective
+
+Write a professional email requesting a project deadline extension.
+
+### Initial Prompt
+
+```text
+Write an email asking for a deadline extension.
+```
+
+### Initial Output
+
+Subject: Deadline Extension
+
+Hi,
+
+I need more time to complete my project. Can you extend the deadline by a few days?
+
+Thanks.
+```
+
+### Improved Prompt
+
+```text
+Act as a working professional communicating with a project manager.
+
+Write a polite and professional email requesting a 5-day extension for a project deadline due to unexpected technical issues. Include a clear subject line, explanation, apology, and commitment to complete the work within the extended timeline.
+```
+
+### Improved Output
+
+Subject: Request for Project Deadline Extension
+
+Dear Project Manager,
+
+I hope you are doing well.
+
+I am writing to request a 5-day extension for the current project deadline. Due to unexpected technical issues that affected my progress, I require additional time to complete the remaining work to the expected quality standards.
+
+I sincerely apologize for any inconvenience this may cause and appreciate your understanding. I am fully committed to completing the project and delivering it within the extended timeline.
+
+Thank you for considering my request. I would be grateful for your approval.
+
+Kind regards,
+
+[Your Name]
+
+### Iteration Analysis
+
+The improved prompt generated a more professional response because it clearly specified:
+
+- The role of the writer
+- The recipient
+- The reason for the extension
+- The requested duration
+- Required email components
+- Professional tone
+
+These details helped produce a complete and workplace-appropriate email.
