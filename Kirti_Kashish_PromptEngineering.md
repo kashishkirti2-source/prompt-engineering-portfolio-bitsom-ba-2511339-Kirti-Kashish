@@ -138,7 +138,7 @@ Create an Instagram post promoting a newly launched smartwatch targeted at young
 
 ### Improved Output
 
-⌚ Meet the Smartwatch That Works as Hard as You Do!
+Meet the Smartwatch That Works as Hard as You Do!
 
 Track your fitness goals, stay productive throughout the day, and enjoy long-lasting battery life without constantly searching for a charger.
 
