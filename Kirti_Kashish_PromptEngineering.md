@@ -1,3 +1,10 @@
+# Prompt Engineering Portfolio
+
+Name: Kirti Kashish
+Date: 06 June 2026
+LLM Used: ChatGPT (GPT-5.5)
+
+
 # Part 1: Prompt Design and Iteration
 
 ## Scenario A: Technical Explanation
@@ -176,6 +183,32 @@ Across all three scenarios, the improved prompts generated responses that were:
 This demonstrates the importance of prompt engineering in guiding large language models toward producing higher-quality outputs.
 
 
+## 1.2 Iteration Documentation
+
+### Scenario A: Technical Explanation
+
+| Version | Prompt | What Changed | Why This Improved the Output |
+|----------|----------|----------|----------|
+| V1 | Explain how neural networks work. | N/A | N/A |
+| V2 | Explain neural networks to a beginner. | Added audience specification. | Made the explanation simpler. |
+| V3 | Act as a teacher explaining to a 15-year-old student with no technical background. Explain how neural networks work using simple language, a real-world analogy, and a step-by-step explanation. Avoid mathematical formulas and keep the explanation under 200 words. | Added role, audience, analogy, structure, and constraints. | Produced a more engaging and beginner-friendly explanation. |
+
+### Scenario B: Professional Email Writing
+
+| Version | Prompt | What Changed | Why This Improved the Output |
+|----------|----------|----------|----------|
+| V1 | Write an email asking for a deadline extension. | N/A | N/A |
+| V2 | Write a professional email requesting more time to complete a project. | Added professional tone. | Improved clarity and professionalism. |
+| V3 | Act as a working professional communicating with a project manager. Write a polite and professional email requesting a 5-day extension due to unexpected technical issues. Include a subject line, apology, and commitment to complete the work. | Added role, context, tone, and structure. | Generated a complete workplace-ready email. |
+
+### Scenario C: Creative Content Generation
+
+| Version | Prompt | What Changed | Why This Improved the Output |
+|----------|----------|----------|----------|
+| V1 | Write a social media post about a new smartwatch. | N/A | N/A |
+| V2 | Write a marketing post promoting a smartwatch. | Added marketing context. | Increased promotional quality. |
+| V3 | Act as a social media marketing specialist. Create an Instagram post promoting a newly launched smartwatch targeted at young professionals. Highlight fitness tracking, battery life, and productivity features. Use an energetic tone, include a catchy hook, and end with a call-to-action. | Added role, audience, tone, and feature requirements. | Produced a more engaging and targeted marketing message. |
+
 # Part 2: Temperature Experimentation
 
 ## Objective
@@ -240,7 +273,51 @@ High temperature generates more diverse and creative outputs but may reduce cons
 This experiment demonstrates how temperature influences the behavior of large language models and helps users choose appropriate settings based on their goals.
 
 
+## 2.2 Analysis & Recommendations
+
+### When Would You Use Low Temperature?
+
+Low temperature is useful when accuracy and consistency are important.
+
+Examples:
+
+1. Generating technical documentation.
+2. Answering factual or educational questions.
+
+### When Would You Use High Temperature?
+
+High temperature is useful when creativity and diversity are desired.
+
+Examples:
+
+1. Brainstorming marketing ideas.
+2. Writing stories, poems, or creative content.
+
+### Which Temperature Worked Best?
+
+For the tagline generation task, the medium temperature setting worked best.
+
+It produced a response that was both creative and clear. The low temperature response was accurate but less engaging, while the high temperature response was more imaginative but slightly less predictable. The medium setting provided the best balance between creativity and consistency.
+
+
 # Part 3: Strategic Prompting Techniques
+
+### Without Chain-of-Thought Prompt
+
+#### Prompt
+
+```text
+Which candidate should be selected for the data analyst position?
+```
+
+#### Response
+
+Candidate B should be selected because they achieved a higher technical test score and appear better suited for the technical requirements of the role.
+
+### With Chain-of-Thought Prompt
+
+(Existing Chain-of-Thought section continues below)
+```
 
 ## 3.1 Chain-of-Thought Prompting
 
@@ -314,6 +391,17 @@ Benefits observed:
 - Reduced risk of missing important factors
 
 This technique is especially useful for business analysis, decision-making, and problem-solving tasks.
+
+
+### Comparison
+
+The response generated without Chain-of-Thought provided only a direct recommendation with limited explanation.
+
+The Chain-of-Thought version broke the problem into smaller reasoning steps and explained how each factor influenced the final decision.
+
+Chain-of-Thought prompting improves transparency and helps users understand the logic behind a conclusion.
+
+One limitation observed is that the reasoning process can become longer and more verbose than necessary for simple tasks.
 
 
 ## 3.2 Few-Shot Prompting
